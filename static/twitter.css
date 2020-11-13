@@ -1,0 +1,169 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    background:#ffffff; 
+    animation: change-color 5s  ease-in-out forwards ;
+}   
+.container{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+}
+
+/*LEFT CONTAINER*/
+.left-container{
+    width: 60vw;
+    height: 100vh;
+}
+.left-container h2{
+    margin-top: 25vh;
+    margin-left: 24vw;;
+    font-weight: 500;
+    font-size: 50px;
+    white-space: nowrap;
+    color:#54aef0;
+    animation: increase-size 3s ease-in-out infinite alternate;
+}   
+@keyframes increase-size{
+    from{
+        font-size:50px;
+    }
+    to{
+        margin-left: 23vw;
+        font-size:52px;
+    }
+}
+
+.input{
+    margin-left: 30vw;;
+    margin-top:5px;
+    width: 40vw;
+    border: 2px solid #54aef0;
+    border-radius: 35px;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 25px; 
+    text-align: center;
+    color: white;
+}
+.input:focus {
+    outline: none;
+    border-bottom: 5px solid  #54aef0;
+    color: black;           
+    font-style: italic;
+    font-family: cursive;
+}
+/* Predict Button */
+.my-cta-button{
+    margin-left: 36vw;;
+    background: #f9f9f9;
+    border: 2px solid #54aef0;
+    border-radius: 1000px;
+    box-shadow: 3px 3px 2px #54aef0;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: #54aef0;
+    font-style: normal;
+    box-shadow: 5px 5px 10px 5px;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+/*RIGHT CONTAINER*/
+.right-container{
+    width:40vw;
+    height:100vh
+}
+.right-container img{
+    width:150%;
+    margin-top: 200px;
+    transform: scaleX(-1);
+    animation: top-bottom 3s ease-in-out forwards;
+}
+@keyframes top-bottom{
+    0%{
+        transform: rotate(0deg);
+        transform: scaleZ(-1);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform: scaleX(-1);
+    }
+}
+
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background-size: 500% 500%;
+    color: white;   
+}
+
+.contact-icon{
+	color: #000000;
+    padding: 10px;
+}
+
+
+.contact-icon:hover{
+	color:#54aef0;
+}
+
+.footer-description{
+	margin: 0;
+    font-size: 12px;
+    color:#333333;
+}
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: red;
+}
+.prediction {
+    color: #54aef0;
+
+}
+
+.safe{
+    color: Green;
+}
+
+.gif{
+	width: 32%;
+}
+.home{
+    color: royalblue;
+}

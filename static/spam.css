@@ -1,0 +1,168 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	animation: color-change 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes color-change{
+	0%{
+		background-color: #FF0288;;
+	}
+	25%{
+		background-color: #f32292;;
+	}
+	50%{
+		background-color: #ce046f;;
+	}
+	75%{
+		background-color: #b9397e;;
+	}
+	100%{
+		background-color: #eb088194;;
+	}
+}
+.main{
+	border: 2px solid white;
+	width: 50%;
+	margin: 60px 0px 0px 25%;
+	padding-bottom: 50px;
+	box-shadow: 5px 5px 10px 20px #db0678;
+	background-color: #FF0288;;
+	
+}
+
+.container{
+	padding: 30px;
+	position: relative;
+	background-size: 500% 500%;
+
+}
+.container-heading{	
+	margin: 0;
+	color: white;
+	margin-top: 100px;
+
+}
+
+.container span{
+	color: white;
+}
+
+.description p{
+    font-style: italic;
+    font-size: 14px;
+    margin: 3px 0 0;
+}
+
+/* Text Area */
+.ml-container{
+	opacity: 0;
+    margin: 30px 0;
+	flex: 1 0 auto;
+	animation: view 2s ease-in  forwards;
+}
+@keyframes view{
+	from{
+		opacity: 0;
+		
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.message-box{
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+.message-box:focus {
+	border: 3px solid chartreuse;
+	box-shadow: 5px 5px 10px 10px chartreuse;
+	color: black;
+}
+/* Predict Button */
+.my-cta-button{
+    background: #f9f9f9;
+    border: 2px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px 2px #8c8c8c;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: italic bold 20px "Verdana", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: white;
+	border: 2px solid white;
+	background-color: chartreuse;
+	box-shadow: 5px 5px 10px 3px white;
+	font-style: normal;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	bottom: 0px;
+	background-size: 500% 500%;
+	color: white;
+}
+
+.contact-icon{
+	padding: 7px;
+	color: chartreuse;
+}
+
+
+.contact-icon:hover{
+	color: white;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+	margin-top: 20vh;
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+.results h1{
+	color: white;
+}
+
+.danger{
+    color: yellow;
+}
+
+.safe{
+    color:chartreuse;
+}
+
+.gif{
+	width: 30%;
+}
+.home{
+	color:blue;
+}

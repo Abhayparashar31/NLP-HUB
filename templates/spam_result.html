@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Result | ESD | NLP | Abhayparashar</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam/favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='spam.css') }}">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>SPAM Email.😑😑</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='spam/spam.gif') }}" alt="SPAM Image">
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great !! Legit email😄😄</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='spam/not-spam.webp') }}" alt="Not a spam image">
+			{% endif %}
+		</div>
+        <div class='footer'>
+            <div class="contact">
+				<a target="_blank" href="https://github.com/Abhayparashar31"><i class="fa fa-github fa-lg contact-icon"></i></a>
+				<a target="_blank" href="/spam"><i class="fa fa-home fa-lg contact-icon"></i></a>
+                
+                <a target="_blank" href="https://www.linkedin.com/in/abhay-parashar-328488185/"><i class="fa fa-linkedin fa-lg contact-icon"></i></a>
+			</div>
+			
+            <p class='footer-description'>Made with ❤️ by Abhayparashar31👋.</p>
+        </div>
+
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRSA || NLP || Abhayparashar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='movie/icon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='movie.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inconsolata:wght@600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Movie Review Sentiment Analysis</h2>
+                <form action="{{ url_for('moviePrediction') }}" method="POST">
+                <input type="text" name="review" class="input"  placeholder="" autocomplete="off" required >
+                <br>
+                <br>
+                <input type="submit" class="my-cta-button" value="Predict">
+            </form>
+    </div>  
+    <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://github.com/Abhayparashar31"><i class="fa fa-github fa-lg contact-icon"></i></a>
+            <a target="_blank" href="/"><i class="fa fa-home fa-lg contact-icon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abhay-parashar-328488185/"><i class="fa fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+        <p class='footer-description'>Made with ❤️ by Abhayparashar31👋.</p>
+    </div>  
+</body>
+</html>

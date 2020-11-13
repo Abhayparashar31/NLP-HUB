@@ -1,0 +1,370 @@
+* {
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Merriweather', serif;
+}
+/*Front*/
+.main-header {
+    background:#131c27;
+}
+nav,a {
+    color: white;
+    text-decoration: none;
+}
+nav a{
+    transition: border 2s ease-in-out;
+}
+nav a:hover{
+    border:2px solid white;
+    color:chartreuse;
+}
+nav {
+    min-height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: #131c27;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul a{
+    padding: 0 1rem;
+}
+#logo {
+    flex: 2 1 40rem;
+    color:chartreuse;
+    padding-left:50px;
+    
+}
+.hero {
+    background: linear-gradient(rgba(15, 34, 23, 0.65),transparent),url('./bg.jpg');
+
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero h2 {
+    margin-top:30px;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.hero h3{
+    font-size:28px;
+    margin-bottom:5px;
+}
+.hero p {
+    font-size:20px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom:5px;
+}
+button {
+    padding: 0.5rem 1rem;
+    color:white;
+    background-color:rgb(44, 190, 44) ;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.5s ease-in-out;
+}
+button:hover {
+    background: chartreuse;
+}
+
+/*Projects*/
+.projects-title{
+    min-height: 10vh;
+    background: #131c27;    
+    text-align: center;
+}
+#projects h2{
+    padding-top: 10px;
+    background-color: #131c27;
+    color:chartreuse;
+    font-size:3rem;
+}
+
+/*Cards*/
+
+
+.cards{
+    display:flex;
+    flex-flow: row wrap;
+}
+.card{
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction:column;
+}
+.card-icon {
+    background: #4c6e97;
+    overflow:hidden;
+}
+.card-icon img{
+    margin:0;
+    padding:0;
+    width:100%;
+
+
+}
+.contact-icon{
+    color:black;
+    padding: 0px 10px;
+}
+.fa-linkedin:before{
+    font-size:25px !important;
+}
+.fa-github:before{
+    font-size:25px !important;
+}
+.contact-icon:hover{
+    color:chartreuse;
+}
+
+.card-btn{
+    padding:0.3rem 2rem;
+    border-radius: 0px;
+    background-color: blue;
+}
+.card h4 {
+    padding: 1rem;
+}
+.card p {
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    min-height: 40vh;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 20rem;
+    margin: 2rem 1rem;
+    box-shadow: 0px 10px 10px chartreuse;  
+    min-height:40vh;
+}
+.card-footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid black;
+    width:100%;
+    box-sizing: content-box;
+}
+
+/*ABOUT*/
+#about{
+    height:100vh;
+    width:98vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#ff0288;
+    margin:0;
+    padding-right:12px;
+}
+.sidebar{
+    flex:1;
+    background-color:#333333;
+    height:100vh;
+}
+.about{
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+}
+.sidebar h1{
+    width:1px;
+    word-wrap: break-word;
+    font-size:6rem;
+    font-family:'Goldman';
+    padding-left:50px;
+    color:white;
+    padding-top:40px;
+}
+.sidebar h1 span{
+    color:chartreuse;
+    word-wrap: normal;
+}
+.about img{
+    width:20%;
+    border: 6px solid #7fff00;
+    border-radius:20px;
+    display: inline-block;
+
+}
+.about img:hover{
+    animation: change-border 2s ease-in-out infinite alternate;
+    transition: all;
+}
+@keyframes change-border{
+    0%{
+        border-top: 4px solid rgb(255, 0, 0);
+    }
+    25%{
+        border-right: 4px solid rgb(173, 113, 0);
+    }
+    50%{
+        border-bottom: 4px solid rgb(180, 9, 180);
+    }
+    75%{
+        border-left: 4px solid rgb(252, 131, 87);
+    }
+    100%{
+        border-top: 4px solid yellow;
+    }
+}
+.profile h2{
+    font-size:40px;
+    color:white;
+}
+.profile h2:hover{
+    animation: change-color 1s ease infinite alternate;
+}
+@keyframes change-color{
+    0%{
+        color:blue;
+    }
+    50%{
+        color:chartreuse
+    }
+    100%{
+        color:yellow;
+    }
+}
+.profile h6{
+    font-size:30px;
+}
+.profile h6:hover{
+    color:yellow;
+}
+.profile{
+    display:flex;
+    align-items: center;
+}
+.content{
+    margin-left:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align:center;
+}
+.profileinfo p{
+    font-size:20px;
+    color:whitesmoke;
+    text-align: justify;
+    padding-top:2rem;
+    font-family:'courier';
+    font-weight: bold;
+}
+.icon:nth-child(1){
+    padding-right:1rem;
+}
+.icon{
+    color:yellow;
+    padding:2rem 1rem;
+    transform:scale(2)
+}
+.icona{
+    margin-left:1rem;
+    box-sizing: content-box;
+}
+.icon:hover{
+    color:chartreuse;
+    transform:scale(2.1);
+}
+.footer{
+    height:10vh;
+    background:#131c27;
+    text-align:center;
+    align-content: center;
+    color:white;
+    font-size:1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header{
+        text-align: center;
+    }
+    #logo{
+        padding-left:0px;
+    }
+    .hero h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .hero h3{
+        font-size:18px;
+        margin-bottom:5px;
+    }
+    .hero p {
+        font-size:10px;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom:5px;
+    }
+    .about{
+        margin-left:2%;
+    }
+    .sidebar h1{
+        font-size:30px;
+        margin-top:220px;
+    }
+    .profile h6{
+        font-size:12px;
+    }
+    .profile h2{
+        font-size:10px;
+    }
+    .profileinfo p{
+        font-size:12px;
+    }
+    .icon:nth-child(1){
+        padding-left:10px;
+        padding-right:1rem;
+    }
+    .icon{
+        color:yellow;
+        padding:1rem 0.4rem;
+        transform:scale(1)
+    }
+    .icon:hover{
+        color:chartreuse;
+        transform:scale(1.1)
+    }
+    #about{
+        width:94vw;
+    }
+    .footer{
+        font-size:0.5rem;
+        white-space: nowrap;
+    }
+  }
+  

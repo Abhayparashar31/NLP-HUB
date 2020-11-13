@@ -1,0 +1,130 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    background:white;
+    background-image: url("./movie/bg.png");
+    background-position: center;
+    background-size: 100%;
+      
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+}
+.container h2{
+    font-family: 'Goldman', cursive;
+    font-weight: 700;
+    font-size: 50px;
+    color:white;
+    margin-top: 33vh;
+}
+.input{
+    width: 40%;
+    border: none;
+    background:transparent; 
+    font-style: italic;
+    font-family: cursive;
+    font-size: 15px; 
+    color: black;
+    border-bottom:5px solid white;
+}
+.input:focus {
+
+    outline: none;
+    border-bottom: 5px solid  chartreuse;
+    color: white;               
+    font:15px "Roboto Slab", sans-serif;
+
+
+}
+/* Predict Button */
+.my-cta-button{
+    background: #f9f9f9;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: bold 20px "Roboto Slab", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: chartreuse;
+    font-style: normal;
+    box-shadow: 5px 5px 10px 5px;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background-size: 500% 500%;
+    color: white;   
+}
+
+.contact-icon{
+	color: white;
+	padding: 7px;
+}
+
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: red;
+    font-family: 'Goldman';
+}
+.prediction {
+    color: white;
+
+}
+
+.safe{
+    color: chartreuse;
+    font-family: 'Goldman';
+}
+
+.gif{
+	width: 32%;
+}
+.home{
+    color:white;
+}
+.home:hover{
+    color:Blue;
+}

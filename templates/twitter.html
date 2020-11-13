@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTSA || NLP || Abhayparashar</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='twitter/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='twitter.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="left-container"> 
+    <h2>Twitter Twittes Sentiment Analysis</h2>
+    <form action="{{ url_for('twitterPrediction') }}" method="POST">
+        <input type="text" name="twitte" class="input"  placeholder="" autocomplete="off" required >
+        <br>
+        <br>
+        <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+</div>
+<div class="right-container">
+    <img src="static/twitter/bg.png">
+</div>
+
+</div>
+
+</body>
+</html>

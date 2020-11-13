@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>TTSA || NLP || Abhayparashar</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='twitter/favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='twitter.css') }}">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="results">
+			{% if prediction==1 %}
+				<h1 class="prediction">Prediction: <span class='safe'>Positive😄😄</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='twitter/positive.webp') }}" alt="Positive😄😄">
+			{% elif prediction==0 %}
+				<h1 class="prediction">Prediction: <span class='danger'>Negative😑😑</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='twitter/negative.webp') }}" alt="Negative😑😑">
+			{% endif %}
+		</div>
+
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/Abhayparashar31"><i class="fa fa-github fa-lg contact-icon"></i></a>
+				<a href="/twitter" class="home">HOME</a>
+				<a target="_blank" href="https://www.linkedin.com/in/abhay-parashar-328488185/"><i class="fa fa-linkedin fa-lg contact-icon"></i></a>
+				<a target="_blank" href="/"><i class="fa fa-home fa-lg contact-icon"></i></a>
+				
+			</div>
+            <p class='footer-description'>Made with ❤️ by Abhayparashar31👋.</p>
+        </div>
+
+	</body>
+</html>
