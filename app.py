@@ -65,7 +65,7 @@ def hotelPrediction():
 def Spam():
     return render_template('spam.html')
 
-@app.route('/predictspam',methods=['POST','GET'])
+@app.route('/predictspam',methods=['POST'])
 def spamPrediction():
     mail = request.form['email']
     data = [mail]
@@ -107,7 +107,7 @@ def moviePrediction():
 @app.route('/textsummary')
 def home():
     return render_template("summary.html")
-@app.route('/summary',methods=['POST','GET'])
+@app.route('/summary',methods=['POST'])
 def data():
     url = request.form['url']
     num = request.form['count']
@@ -121,7 +121,7 @@ def data():
 @app.route('/stock')
 def stockanalysis():
     return render_template("stock.html")
-@app.route('/predictstock',methods=['POST','GET'])
+@app.route('/predictstock',methods=['POST'])
 def predictstock():
     headline = request.form['headline']
     headline = headline.lower()
