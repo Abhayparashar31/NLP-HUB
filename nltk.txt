@@ -1,4 +1,1 @@
-wordnet
-reuters
 corpus
-punkt
