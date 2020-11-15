@@ -2,15 +2,13 @@ from flask import Flask,render_template,request
 import pickle
 import re
 import nltk
-
-nltk.data.path.append('/nltk_data/')
-
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
 import pickle
 from clean import clean_text
 from summary import gen_summary
 app = Flask(__name__)
+
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
 
 
 ######## MODELS #############
